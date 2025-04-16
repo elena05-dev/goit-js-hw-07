@@ -4,7 +4,7 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Montserrat, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,6 +13,7 @@ body {
   line-height: 1.5;
 
 }
+
 
 
 /*---dz1--*/
@@ -53,7 +54,6 @@ body {
 }
 
 .item h2 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33;
@@ -84,7 +84,6 @@ body {
   width: 360px;
   height: 40px;
   padding-left: 16px;
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -143,12 +142,10 @@ Resources body {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .text-output {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33;
@@ -176,7 +173,6 @@ Resources body {
   border-radius: 4px;
   width: 360px;
   height: 40px;
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -190,10 +186,62 @@ Resources body {
   width: 86px;
   height: 40px;
   background: #4e75ff;
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:active {
+  background-color: #404bbf;
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+/*---dz5---*/
+.widget {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  gap: 16px;
+  background: #fff;
+}
+
+.backgr-color {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0 auto;
+
+}
+
+.change-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.change-color:active {
+  background-color: #404bbf;
 }
